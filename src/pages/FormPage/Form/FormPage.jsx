@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import InputMask from 'react-input-mask';
 import './FormPage.scss';
-import { Button } from '../../../components/Button';
 
 import sendMessage from '../../../requests/sendMessage.js';
 import formatFormData from '../../../helpers/formatFormData.js';
@@ -111,13 +110,14 @@ export const FormPage = () => {
         <h2 className='form__title'>Зворотній зв’язок</h2>
         <form onSubmit={handleSubmit}>
           <fieldset>
-            <legend className='form-text'>Ім’я та прізвище:</legend>
+            <legend className='form-text'>Ім’я та призвище:</legend>
             <div className='form-container'>
               <div className="input-container__input">
                 <input
                   type="text"
                   id="firstName"
                   name="firstName"
+                  className="input-container__input--item"
                   value={formData.firstName}
                   onChange={handleChange}
                   required
@@ -136,6 +136,7 @@ export const FormPage = () => {
                   type="text"
                   id="lastName"
                   name="lastName"
+                  className="input-container__input--item"
                   value={formData.lastName}
                   onChange={handleChange}
                   required
@@ -201,13 +202,13 @@ export const FormPage = () => {
               </p>
             )}
           </div>
-          <Button
-            className="button--blue"
-            content={'Відправити'}
-            color={'blue'}
-            type="submit"
+          <button
+            className="form--button" 
+            type="submit" 
             id="submitButton"
-          />
+          >
+            Відправити
+          </button>
         </form>
         {errorMessage && (
           <div className="error-message">
