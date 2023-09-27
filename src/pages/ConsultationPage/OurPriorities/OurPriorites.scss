@@ -1,0 +1,95 @@
+@import "../../../styles/global-imports";
+
+.our-priorites {
+  position: relative;
+
+  background-color: $c-blue;
+  color: $c-white;
+
+  margin-top: 100px !important;
+  padding-top: 100px;
+
+  width: 97.7vw;  
+  margin: 0 auto;
+
+  height: 750px;
+
+  @include onMobile {
+    height: 426px;
+  }
+
+  &--title {
+    text-transform: unset;
+    max-width: 968px;
+
+    @include onTablet {
+      font-size: 50px;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    @include onMobile {
+      font-size: 25px;
+      line-height: 140%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 46px 0 0 420px;
+
+    
+    @include onMobileAndTablet {
+      margin-left: 0;
+    }
+    
+    @include onMobile {
+      position: relative;
+      bottom: -310px;
+      margin-top: 10px;
+    }
+
+    &--title {
+      @include onMobile {
+        position: absolute;
+        bottom: 246px;
+      }
+    }
+  
+    &--image {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @include onMobile {
+        width: 280px;
+        bottom: 36px;
+        left: 18px;
+        z-index: 0;
+      }
+    }
+  }
+
+  &--button {
+    width: 212px;
+    height: 98px;
+    margin-top: 20px;
+    z-index: 1;
+
+    @include onTablet {
+      position: absolute;
+      bottom: 90px;
+      right: 70px;
+    }
+
+    @include onMobile {
+      position: absolute;
+      bottom: 10px; 
+
+      width: 90%;
+      height: 40px;
+    }
+  }
+
+}

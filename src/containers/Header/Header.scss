@@ -1,0 +1,25 @@
+@import "../../styles/global-imports";
+
+.header {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 10px;
+  height: 100px;
+  
+  @include onTablet {
+    gap: 30px;
+  }
+
+  @include onMobile {
+    height: 50px;
+  }
+
+  &--menu {
+    @include onTabletAndDesktop {
+      display: none;
+    }
+  }
+}

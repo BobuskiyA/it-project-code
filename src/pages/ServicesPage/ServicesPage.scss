@@ -1,0 +1,49 @@
+@import "../../styles/global-imports";
+
+.services-page {
+  &__content {
+    margin: 0 auto;
+    max-width: 1248px;
+
+    @include onTablet {
+      max-width: 100%;
+    }
+
+    @include onMobile {
+      max-width: 288px;
+    }
+  }
+
+  &__list {
+    margin-top: 70px;
+
+    @include onMobile {
+      display: none;
+    }
+  }
+
+  &__slider {
+    display: none !important;
+
+    @include onMobile {
+      display: block !important;
+      margin-top: 40px;
+    }
+
+    .swiper-pagination {
+      &-bullets {
+        bottom: 46px !important;
+      }
+
+      &-bullet {
+        width: 16px;
+        height: 16px;
+        background-color: $c-grey;
+
+        &-active {  
+          background-color: $c-blue !important;
+        }
+      }
+    }
+  }
+}

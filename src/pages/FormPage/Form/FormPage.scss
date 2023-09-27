@@ -1,0 +1,148 @@
+@import "../../../styles/global-imports";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;  
+
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+  margin: 85px;
+  padding: 60px;
+
+  &__title{
+    color: #000;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &-text {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    margin-top: 10px;
+    margin-bottom: 6px;
+
+    font-size: 12px;
+  }
+
+  &-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+}
+
+span{
+  position: relative;
+  border-right: 1px solid gray;
+  font-family: Roboto;
+  font-size: 14px;
+  padding-right: 8px;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input{
+  border-radius: 5px;
+  border: 1px solid rgba(66, 80, 102, 0.40);
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(66, 80, 102, 0.10);
+
+  padding: 12px;
+}
+
+
+.input{
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(66, 80, 102, 0.40);
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(66, 80, 102, 0.10);
+
+
+  &-container{
+    display: flex;
+    align-items: center;    
+}
+
+  &-phone{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    width: 100%;
+  }
+
+  &-message{
+    color: #D24E4E;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.success{
+  color: #2E964B;
+}
+.error{
+  color: #D24E4E;
+}
+
+.phone{
+  border-radius: 5px;
+  border: 1px solid rgba(66, 80, 102, 0.40);
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(66, 80, 102, 0.10);
+}
+
+.number{
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  gap: 8px;
+  &-image{
+    background: url("../../../images/ua.png") no-repeat center;
+    background-size: contain;
+    width: 16px;
+    height: 12px;
+
+  }
+}
+
+textarea{
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  resize: none;
+  overflow: hidden;
+  height: 100px;
+}
+
+.button{
+  border-radius: 5px;
+  width: auto;
+  padding: 12px 24px;
+  margin-top: 32px;
+  &--blue{
+  }
+}
+
+.error-message{
+  color: #D24E4E;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,64 @@
+@import "../../../styles/global-imports";
+
+.why-us {
+  margin-top: 330px;
+  padding-bottom: 64px;
+  
+  border-bottom: 1px solid $c-blue;
+
+  @include onMobile {
+    margin-top: 130px;
+    padding-bottom: 10px;
+  }
+
+  &--title {
+    @include onTablet {
+      font-size: 50px;
+      line-height: 46px;
+    }
+
+    @include onMobile {
+      display: none;
+    }
+
+    &-mobile {
+      display: none;
+
+      @include onMobile {
+        display: block;
+      }
+    }
+  }
+  
+  &__content {
+    display: flex;
+    
+    margin-top: 20px;
+
+    @include onMobileAndTablet {
+      flex-direction: column;
+    }
+  }
+  
+  &__text {
+    width: 608px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include onMobileAndTablet {
+      margin-bottom: 46px;
+    }
+
+    @include onMobile {
+      width: 100%;
+    }
+  }
+
+  &--image {
+    @include onMobile {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@import "../../../styles/global-imports";
+
+.consultation-head {
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $c-white;
+  background-color: $c-blue;
+
+  width: 97.7vw;  
+  margin: 0 auto;
+
+  height: 800px;  
+
+  &--subtitle {
+    width: 566px;
+    text-align: start;
+
+    @include onMobileAndTablet {
+      margin-top: 20px;
+      width: auto;
+    }
+  }
+
+    @include onMobileAndTablet {
+      padding-top: 20px;
+      align-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    @include onMobile {
+      height: 374px;
+    }
+
+    &--content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include onDesktop {
+        padding-right: 140px;
+      }
+    }
+    
+    &--arrow-first,
+    &--arrow-second {
+      background: url("../../../images/icons/arrow-white.svg") no-repeat center;
+      background-size: contain;
+  
+      height: 446px;
+      width: 426px;
+  
+      position: absolute;
+      bottom: 0;
+
+      @include onMobile {
+        width: 120px;
+        height: 150px;
+      }
+
+    }
+    
+    &--arrow-first {
+      left: 0;
+      transform: scaleX(-1);
+
+      @include onTablet {
+        left: -40px;
+      }
+    }
+    
+    &--arrow-second {
+      right: 0;
+
+      @include onTablet {
+        width: 216px;
+        height: 354px;
+        background-size: cover;
+        background-position: 0 0;
+      }
+    }
+    
+    &--robot-first,
+    &--robot-second {
+      background: url("../../../images/consultation_robot.png") no-repeat center;
+      background-size: contain;
+      
+      width: 324px;
+      height: 413px;
+      
+      position: absolute;
+
+      @include onMobile {
+        width: 120px;
+        height: 138px;
+      }
+    }
+    
+    &--robot-first {
+      left: 0;
+      bottom: 0;
+
+      @include onMobile {
+        left: -20px;
+      }
+    }
+    
+    &--robot-second {
+      transform: rotate(-30deg);
+      top: 80px;
+      right: 83px;
+
+      @include onTablet {
+        width: 200px;
+        height: 244px;
+
+        top: 370px;
+        right: 50px;
+      }
+
+      @include onMobile {
+        top: 168px;
+        right: 28px;
+      }
+    }
+
+    &--link {
+      position: absolute;
+      bottom: 200px;
+      right: 500px;
+
+      @include onTablet {
+        bottom: 10px;
+        right: 250px;
+      }
+    }
+
+}

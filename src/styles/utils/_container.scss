@@ -1,0 +1,14 @@
+@import "../utils/mixins";
+
+.container {
+  margin: 0 auto;
+  max-width: 1248px;
+
+  @include onTablet {
+    max-width: 640px;
+  }
+
+  @include onMobile {
+    max-width: 288px;
+  }
+}

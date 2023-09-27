@@ -1,0 +1,37 @@
+@mixin hover($property, $toValue) {
+  transition: #{$property} 0.3s ease-in-out;
+
+  &:hover {
+    #{$property}: $toValue;
+  }
+}
+
+@mixin onMobile {
+  @media (min-width: 320px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 767px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin onMobileAndTablet {
+  @media (min-width: 320px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin onTabletAndDesktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../styles/global-imports";
+
+.round-link {
+  &--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 75px;
+    width: 75px;
+
+    border-radius: 100%;
+
+    @include onTablet {
+      height: 90px;
+      width: 90px;
+    }
+    
+    @include onMobile {  
+      height: 60px;
+      width: 60px;
+    }
+
+    &-blue {
+      background-color: $c-blue;
+    }
+
+    &-white {
+      background-color: $c-white;
+    }
+  }
+
+  &--arrow {
+    width: 44px;
+    height: 44px;
+
+    @include onTablet {
+      width: 66px;
+      height: 66px;
+    }
+
+    @include onMobile {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}

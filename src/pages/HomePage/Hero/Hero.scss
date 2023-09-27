@@ -1,0 +1,147 @@
+@import "../../../styles/global-imports";
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  position: relative;
+  
+  margin-top: 38px;
+
+  @include onMobileAndTablet {
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin-top: 10px;
+  }
+
+  @include onMobile {
+    align-items: flex-start
+  }
+
+  &__main-image {
+    &--item {
+      @include onMobile {
+        width: 288px;
+      }
+    }
+  }
+
+  &__titles {
+    width: 592px;
+    margin-bottom: 16px;
+
+    &--title {
+      line-height: 70px;
+    }
+
+    &--subtitle {
+      color: $c-blue;
+    }
+
+    @include onMobile {
+      width: 238px;
+    }
+  }
+  
+  &__main-content {
+    &--text {
+      margin-bottom: 26px;
+      width: 556px;
+
+      @include onMobile {
+        width: 250px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__link-arrow {
+    position: absolute;
+    left: 800px;
+
+    @include onTablet {
+      top: 900px;
+      left: 280px;
+
+      height: 90px;
+      width: 90px;
+    }
+    
+    @include onMobile {
+      top: 480px;
+      left: 100px;
+  
+      height: 60px;
+      width: 60px;
+    }
+  }
+
+  
+  &--first-arrow,
+  &--second-arrow {
+    position: absolute;
+
+    background: url("../../../images/icons/hero-image-1.svg") no-repeat;
+    
+    height: 96%;
+    width: 34%;
+    
+    z-index: -1;
+    
+    @include onTablet {
+      width: 64%;      
+    }
+
+    @include onMobile {
+      width: 60%;
+      height: 34%;
+
+      background: url("../../../images/icons/hero-arrow-mobile.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+  
+  &--first-arrow {
+    top: 310px;
+    left: 14px;
+    
+    @include onTablet {
+      top: 526px;
+      left: -187px;   
+    }
+    
+    @include onMobile {
+      top: 314px;
+      left: -98px;
+    }
+  }
+
+  &--second-arrow {
+    transform: scaleX(-1);
+
+    overflow: hidden;
+
+    top: 300px;
+    right: -56px;
+
+    width: 34%;
+        
+    @include onTablet {
+      width: 34%;
+      top: 501px;
+      right: -64px;
+
+      background-position: -190px 0;
+    }
+    
+    @include onMobile {
+      width: 50%;
+      top: 318px;
+      right: -14px;
+
+      background-position: 0px 0;
+    }
+  }
+}

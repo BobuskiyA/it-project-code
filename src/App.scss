@@ -1,0 +1,27 @@
+@import "./styles/global-imports";
+@import "./styles/utils/reset";
+
+html {
+  @extend %body-text;
+  scroll-behavior: smooth;
+}
+
+.body {
+  &-with-menu {
+    overflow: hidden;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+}

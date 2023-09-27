@@ -1,0 +1,87 @@
+@import "../../../styles/global-imports";
+
+.about-us {
+  position: relative;
+
+  border-bottom: 1px solid $c-blue;
+
+  padding: 60px 0;
+
+  @include onMobile {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  &__rugs {
+    display: flex;
+    gap: 16px;
+
+    position: absolute;
+
+    @include onMobile {
+      top: 24px;
+    }
+  
+    &--item {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+
+      @include onMobile {
+        width: 20px;
+        height: 20px;  
+      }
+    }
+  }
+
+  &--title {
+    width: 700px;
+    text-align: end;
+
+    margin-left: 110px;
+
+    @include onTablet {
+      width: 474px;
+      font-size: 30px;
+    }
+
+    @include onMobile {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 26px;
+
+    @extend %body-text;
+  }
+
+  &--button {
+    width: 220px;
+    height: 98px;
+
+    @include onMobile {
+      width: 100%;
+      height: 40px;
+    }
+  }
+  
+  &__left {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__benefits-list {
+    list-style: square;
+
+    @include onMobileAndTablet {
+      display: none;
+    }
+  }
+}
