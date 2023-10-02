@@ -22,7 +22,7 @@ export const OurPriorites = () => (
         <div className="our-priorites--button">
           <Button
             content={'Зв\'яжіться зі мною'}
-            color={'white'}
+            color={'blue-secondary'}
           />
         </div>
 

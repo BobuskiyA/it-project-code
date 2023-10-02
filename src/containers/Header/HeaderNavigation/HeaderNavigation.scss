@@ -14,14 +14,8 @@
   }
   
   &--button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: var(--color-main-blue, #3548FE);
     width: 182px;
     height: 98px;
-    @include hover(color, white);
 
     @include onTablet {
       width: 138px;

@@ -1,6 +1,6 @@
 export const AboutUsLinks = {
   'Послуги': 'services',
-  'Чому саме ми': 'why-us',
+  'Чому саме ми': '',
   'Консультація': 'consultation',
 }
 

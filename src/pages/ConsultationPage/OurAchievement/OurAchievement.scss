@@ -14,6 +14,7 @@
   &-container {
     @include onDesktop {
       margin: 100px auto 0;
+      width: 97vw;
       max-width: 1248px;
     }
   }
@@ -22,11 +23,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    overflow-x: scroll;
     
+    &::-webkit-scrollbar {
+      height: 2px;
+    }
+  
     @include onMobileAndTablet {
-      overflow-x: scroll;
       background: $c-black;
-      max-width: 100vw;
+      max-width: 97vw;
+
     }
   }
   

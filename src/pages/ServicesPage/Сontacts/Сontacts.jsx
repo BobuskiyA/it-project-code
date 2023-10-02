@@ -5,7 +5,7 @@ import tedeshi from '../../../images/contacts.png';
 import './Сontacts.scss';
 
 export const Сontacts = () => (
-  <div className="container contacts">
+  <div className="container contacts" id="contacts">
     <div className="contacts__content">
       <h1 className="blue-text contacts--title">
         Консультація

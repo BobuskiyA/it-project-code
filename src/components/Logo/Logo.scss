@@ -1,0 +1,11 @@
+.logo {
+  min-width: max-content;
+  
+  &--link {
+    text-transform: uppercase;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}

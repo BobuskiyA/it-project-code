@@ -7,8 +7,7 @@ export const RoundLink = ({
   color
 }) => (
   <div className="round-link">
-    <a 
-      href="/"
+    <div
       className={classNames(
         'round-link--item', {
           'round-link--item-blue': color === 'blue'
@@ -31,6 +30,6 @@ export const RoundLink = ({
             className="round-link--arrow"
           />
       )}
-    </a>
+    </div>
   </div>
 ); 

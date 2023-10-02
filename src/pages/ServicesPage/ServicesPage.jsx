@@ -10,8 +10,15 @@ import './Swiper/swiper.scss'; // core Swiper
 import './Swiper/pagination/pagination.scss'; // Pagination module
 import { ServicesPageHead } from './ServicesPageHead/ServicesPageHead';
 
+import { motion } from 'framer-motion';
+
 export const ServicesPage = () => (
-  <div className="services-page">
+  <motion.div 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    className="services-page"
+  >
     <ServicesPageHead />
 
     <div className="services-page__content">
@@ -21,12 +28,14 @@ export const ServicesPage = () => (
           photo_link,
           title,
           content,
+          price,
         }) => (
           <ServicesCard
             id={id}
             photo_link={photo_link}
             title={title}
             content={content}
+            price={price}
           />
         ))}
       </ul>
@@ -44,6 +53,7 @@ export const ServicesPage = () => (
           photo_link,
           title,
           content,
+          price,
         }) => (
           <SwiperSlide>
             <ServicesCard
@@ -51,12 +61,13 @@ export const ServicesPage = () => (
               photo_link={photo_link}
               title={title}
               content={content}
-              />
+              price={price}
+            />
           </SwiperSlide>
         ))}
     </Swiper>
 
       <Сontacts />
     </div>
-  </div>
+  </motion.div>
 );

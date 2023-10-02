@@ -3,7 +3,6 @@
 
 html {
   @extend %body-text;
-  scroll-behavior: smooth;
 }
 
 .body {
@@ -22,6 +21,10 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    margin: 140px 0 100px;
+
+    @include onMobile {
+      margin-top: 70px;
+    }
   }
 }

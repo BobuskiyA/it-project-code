@@ -1,16 +1,16 @@
-import { AboutUsLinks } from '../../components/AboutUsLinks';
+import { Link } from 'react-router-dom';
+import  FooterContent from './FooterContent/FooterContent.json';
 import { Button } from '../../components/Button';
 import './Footer.scss';
-
-const DOCUMENTS = ['Публiчна оферта', 'Полiтика конфiденційності'];
+import { BackToUp } from '../../components/BackToUp/BackToUp';
 
 export const Footer = () => (
   <footer className="footer">
     <div className="container">
       <div className="footer__top">
-        <h1 className="footer--title">
+        <h2 className="footer--title">
           Кінець сторінки. Початок вашого успіху!
-        </h1>
+        </h2>
 
         <h4 className="footer--text">
           Поділіться своїми даними та очікуйте дзвінка протягом 24 годин.
@@ -34,11 +34,14 @@ export const Footer = () => (
             </p>
 
             <ul className="footer__links__list">
-              {Object.entries(AboutUsLinks).map(([label, containerName]) => (
+              {Object.entries(FooterContent).map(([label, containerName]) => (
                 <li key={containerName}>
-                  <a href={`#${containerName}`}>
+                  <Link 
+                    to={containerName}
+                    onClick={BackToUp}  
+                  >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -50,13 +53,11 @@ export const Footer = () => (
             </p>
 
               <ul className="footer__links__list">
-                {DOCUMENTS.map(currentLink => (
-                  <li key={currentLink}>
-                    <a href={`/`}>
-                      {currentLink}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <Link>
+                    Публiчна оферта
+                  </Link>
+                </li>
             </ul>
           </div>
         </div>

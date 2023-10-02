@@ -14,13 +14,15 @@ export const ServicesPreview = () => {
         <h3 className="services-preview--title container">
           Ми робимо
         </h3>
-
+        <ul>
           <ServicesCard
             id={previevCard.id}
             photo_link={previevCard.photo_link}
             title={previevCard.title}
             content={previevCard.content}
+            price={previevCard.price}
           />
+        </ul>
       </div>
     </div>
   );

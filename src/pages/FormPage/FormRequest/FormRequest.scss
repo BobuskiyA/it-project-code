@@ -1,0 +1,58 @@
+@import "../../../styles/global-imports";
+
+.form-request {
+  display: flex;
+
+  width: 100vw;
+  padding-bottom: 100px;
+
+  background: url("../../../images/form/form-rejuest.jpg") center no-repeat;
+  margin-bottom: -100px;
+  background-size: cover;
+  color: $c-white;
+
+  @include onDesktop {
+    height: 100vh;
+    padding-bottom: 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    @include onMobileAndTablet {
+      margin-top: 20px;
+      justify-content: start;
+    }
+  }
+
+  &--title {
+    @include onTablet {
+      font-size: 56px;
+    }
+
+    @include onMobile {
+      font-size: 34px;
+    }
+  }
+  
+  &--subtitle {
+    @include onMobile {
+      font-size: 14px;
+      line-height: 23px;
+    }
+  }
+
+  &--button {
+    width: 320px;
+    height: 98px;
+    margin-top: 50px;
+
+    @include onMobile {
+      width: 100%;
+      height: 40px;
+    }
+  }
+}

@@ -3,8 +3,15 @@ import { Hero } from './Hero';
 import { ServicesPreview } from './ServicesPreview/ServicesPreview';
 import { WhyUs } from './WhyUs';
 
+import { motion } from 'framer-motion';
+
 export const HomePage = () => (
-  <div className="home-page">
+  <motion.div 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    className="home-page"
+  >
     <Hero />
   
     <WhyUs />
@@ -12,5 +19,5 @@ export const HomePage = () => (
     <AboutUs />
 
     <ServicesPreview />
-  </div>
+  </motion.div>
 );

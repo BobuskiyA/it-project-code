@@ -5,7 +5,7 @@ import './Header.scss';
 import { HeaderMenu } from "./HeaderMenu/HeaderMenu";
 
 export const Header = () => (
-  <header className="header container">
+  <header className="header">
     <Logo />
 
     <HeaderNavigation />

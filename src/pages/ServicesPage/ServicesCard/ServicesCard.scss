@@ -24,8 +24,6 @@
     margin-bottom: 80px;
     color: $c-white;
 
-    z-index: -1;
-
     @include onMobile {
       height: 410px;
     }
@@ -40,12 +38,23 @@
       }
     }    
 
+    &--title {
+      @include onMobile {
+        font-size: 34px;
+        line-height: 40px;
+      }
+    }
+
     &--text {
       max-width: 330px;
 
       @include onMobile {
-        margin-top: 28px;
+        margin-top: 18px;
       }
+    }
+
+    &--price {
+      margin-top: 24px;
     }
   }
 }

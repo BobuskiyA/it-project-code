@@ -5,6 +5,8 @@ import './FormPage.scss';
 import sendMessage from '../../../requests/sendMessage.js';
 import formatFormData from '../../../helpers/formatFormData.js';
 
+import { motion } from 'framer-motion';
+
 export const FormPage = () => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -105,7 +107,12 @@ export const FormPage = () => {
   }, [errorMessage]);
 
   return (
-    <div className="container">
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="container"
+    >
       <div className='form'>
         <h2 className='form__title'>Зворотній зв’язок</h2>
         <form onSubmit={handleSubmit}>
@@ -216,6 +223,6 @@ export const FormPage = () => {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };

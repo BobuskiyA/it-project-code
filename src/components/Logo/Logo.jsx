@@ -1,11 +1,16 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './Logo.scss';
+import { BackToUp } from '../BackToUp/BackToUp';
 
 export const Logo = () => (
   <div className="logo">
-    <NavLink
+    <Link 
       to="/"
+      replace
+      className="logo--link"
+      onClick={BackToUp}
     >
-      LOGOTYPE
-    </NavLink>
+      IT-shared
+    </Link>
   </div>
 );
