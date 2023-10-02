@@ -78,6 +78,7 @@ export const FormPage = () => {
       };
 
       console.log('Дані, готові до відправки:', dataToSend);
+      window.location.href = '#/form-request';
 
       const message = formatFormData(dataToSend);
 
