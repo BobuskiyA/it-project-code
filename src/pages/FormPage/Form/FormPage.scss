@@ -119,10 +119,8 @@
 }
 
   &-phone{
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    border-left: none;
+    
+    border: none !important;
     width: 100%;
   }
 
