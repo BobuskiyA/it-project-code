@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/BobuskiyA/it-project-code/static/css/main.b8892624.css",
+    "main.js": "/BobuskiyA/it-project-code/static/js/main.1a9eea79.js",
+    "static/media/design-card.png": "/BobuskiyA/it-project-code/static/media/design-card.56a42c77c90b1e2b8a95.png",
+    "static/media/analytics-card.png": "/BobuskiyA/it-project-code/static/media/analytics-card.689445f2bc569c507c23.png",
+    "static/media/form-rejuest.jpg": "/BobuskiyA/it-project-code/static/media/form-rejuest.5070215d7227d42c1168.jpg",
+    "static/media/develop-card.png": "/BobuskiyA/it-project-code/static/media/develop-card.d24b2ef15441e096bcff.png",
+    "static/media/contacts.png": "/BobuskiyA/it-project-code/static/media/contacts.7087bc97094b86d26373.png",
+    "static/media/services.png": "/BobuskiyA/it-project-code/static/media/services.24da9d77837f129aa848.png",
+    "static/media/hero-page.png": "/BobuskiyA/it-project-code/static/media/hero-page.ad2401949bb4e40ce7e1.png",
+    "static/media/our-priorites.png": "/BobuskiyA/it-project-code/static/media/our-priorites.3831954064cc69ce26b7.png",
+    "static/media/why-us.png": "/BobuskiyA/it-project-code/static/media/why-us.96b3e258c3d84d1b32a8.png",
+    "static/media/consultation_robot.png": "/BobuskiyA/it-project-code/static/media/consultation_robot.0396a224e37f820a59e7.png",
+    "static/media/lines.svg": "/BobuskiyA/it-project-code/static/media/lines.43eb85ecda7dc261c2ba.svg",
+    "static/media/cross.svg": "/BobuskiyA/it-project-code/static/media/cross.79c0fc9d7cb001d1d321.svg",
+    "static/media/arrow-white.svg": "/BobuskiyA/it-project-code/static/media/arrow-white.8f5bb23309fc3da54d21.svg",
+    "static/media/hero-arrow-mobile.svg": "/BobuskiyA/it-project-code/static/media/hero-arrow-mobile.9af2f20dcb6a9fb77203.svg",
+    "static/media/hero-image-1.svg": "/BobuskiyA/it-project-code/static/media/hero-image-1.bcc4498cc08c7495d8aa.svg",
+    "static/media/pixel_arrow-blue.svg": "/BobuskiyA/it-project-code/static/media/pixel_arrow-blue.e5901bd05d25772c44a4a197e9d3994b.svg",
+    "static/media/pixel_arrow.svg": "/BobuskiyA/it-project-code/static/media/pixel_arrow.a39ac323f5e513a306ab56b7416e9e86.svg",
+    "index.html": "/BobuskiyA/it-project-code/index.html",
+    "static/media/menu-burger.svg": "/BobuskiyA/it-project-code/static/media/menu-burger.a0045f3aba92bb02f5f9.svg",
+    "main.b8892624.css.map": "/BobuskiyA/it-project-code/static/css/main.b8892624.css.map",
+    "main.1a9eea79.js.map": "/BobuskiyA/it-project-code/static/js/main.1a9eea79.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8892624.css",
+    "static/js/main.1a9eea79.js"
+  ]
+}

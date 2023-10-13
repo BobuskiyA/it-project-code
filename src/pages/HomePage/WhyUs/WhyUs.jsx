@@ -2,7 +2,7 @@ import './WhyUs.scss';
 import WhyUsImage from '../../../images/why-us.png';
 
 export const WhyUs = () => (
-  <div className="container">
+  <div className="container" >
     <div className="why-us">
       <h1 className="why-us--title">
         Чому варто обрати
